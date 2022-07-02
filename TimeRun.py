@@ -1,0 +1,43 @@
+#!/usr/bin/env python
+# -*- coding: UTF-8 -*-
+'''
+@Project ：test2.py 
+@File    ：TimeRun.py
+@IDE     ：PyCharm 
+@Author  ：萌新小缘
+@Date    ：2022/7/2 18:48 
+'''
+
+import requests
+import time
+from InterfaceCall import Weekly, Daily
+
+
+def timeRun():
+    # 自行设置格式 格式20211224
+    nowTime = time.strftime('%Y%m%d', time.localtime())
+    # 节假日接口(工作日对应结果为 0, 休息日对应结果为 1, 节假日对应的结果为 2 )
+    server_url = "https://api.apihubs.cn/holiday/get?cn=1&size=31&date=" + "20220701"
+    req = requests.get(server_url).json()
+    print(req)
+    # 获取data值
+    # 判断是否为工作日
+    workday = req['data']['list'][0]['workday']
+    # 星期几
+    week_cn = req['data']['list'][0]['week_cn']
+    # 是否为工作日
+    workday_cn = req['data']['list'][0]['workday_cn']
+    # 法定节假日判断
+    holiday_legal_cn = req['data']['list'][0]['holiday_legal_cn']
+    print('日期 ' + str(nowTime) + '\n查询结果为 ' + str(workday_cn) + '\n结论 ', end=' ')
+    if holiday_legal_cn == '法定节假日':
+        print('法定节假日')
+        Weekly.send()
+    elif int(workday) == 1:
+        print('工作日')
+        Daily.send()
+        if week_cn == '星期五':
+            print('星期五')
+            Weekly.send()
+    else:
+        print('Error')
