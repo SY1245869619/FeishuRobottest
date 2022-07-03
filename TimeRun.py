@@ -17,7 +17,7 @@ def timeRun():
     # 自行设置格式 格式20211224
     nowTime = time.strftime('%Y%m%d', time.localtime())
     # 节假日接口(工作日对应结果为 0, 休息日对应结果为 1, 节假日对应的结果为 2 )
-    server_url = "https://api.apihubs.cn/holiday/get?cn=1&size=31&date=" + "20220701"
+    server_url = "https://api.apihubs.cn/holiday/get?cn=1&size=31&date=" + nowTime
     req = requests.get(server_url).json()
     print(req)
     # 获取data值
@@ -30,6 +30,7 @@ def timeRun():
     # 法定节假日判断
     holiday_legal_cn = req['data']['list'][0]['holiday_legal_cn']
     print('日期 ' + str(nowTime) + '\n查询结果为 ' + str(workday_cn) + '\n结论 ', end=' ')
+    # 这个用来判断节假日放假什么的
     if holiday_legal_cn == '法定节假日':
         print('法定节假日')
         Weekly.send()
