@@ -34,5 +34,4 @@ while True:
         time.sleep(sleeptime)
     elif now_hour == "10":
         print("启动时北京时间为：" + time.strftime("%H:%M", time.localtime()), "\t软件将在每天10点发送数据！")
-        TimeRun.timeRun()
         time.sleep(36000 - int(now_min) * 60)

@@ -56,7 +56,7 @@ def send():
                     "tag": "div",
                     "text": {
                         "tag": "lark_md",
-                        "content": weather.d6
+                        "content": weather.weather()
                     }
                 }
 
@@ -67,9 +67,9 @@ def send():
     # 请求体
     req = {
         # # 消息记录群（测试）
-        # "receive_id": "oc_dc684ab9c57e6d7ba42330ac2a293603",
+        "receive_id": "oc_dc684ab9c57e6d7ba42330ac2a293603",
         # 产品研发群
-        "receive_id": "oc_a8ca381b96903c22e046faea1082f3f8",
+        # "receive_id": "oc_a8ca381b96903c22e046faea1082f3f8",
         "content": json.dumps(msgContent),
         "msg_type": "interactive",
     }
