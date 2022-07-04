@@ -68,9 +68,9 @@ def send():
     }
     data1 = json.dumps(data, ensure_ascii=True).encode("utf-8")
     # 研发中心群
-    # url = "https://open.feishu.cn/open-apis/bot/v2/hook/e2e226c4-e953-4740-9c5a-f94e7bf1a7d7"
+    url = "https://open.feishu.cn/open-apis/bot/v2/hook/e2e226c4-e953-4740-9c5a-f94e7bf1a7d7"
     # # 消息记录群
-    url = "https://open.feishu.cn/open-apis/bot/v2/hook/f0db5b1a-0ac0-493b-9f86-b6904f2c99a0"
+    # url = "https://open.feishu.cn/open-apis/bot/v2/hook/f0db5b1a-0ac0-493b-9f86-b6904f2c99a0"
     # url = "https://open.feishu.cn/open-apis/bot/v2/hook/a53dfe87-defb-46b2-bc9a-888e9b56eb1a"
     header = {
         "Content-type": "application/json",

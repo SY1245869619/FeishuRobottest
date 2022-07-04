@@ -37,5 +37,11 @@ def weather():
     d4 = d1 + '\n' + d3 + '\n'
     d5 = d2 + '\n' + d3 + '\n'
     d7 = "天气更新时间:" + gx['loc']
-    d6 = d4 + d5 + d7
-    print(d6)
+    weather_tq = d4 + d5 + d7
+    print(weather_tq)
+
+    return weather_tq
+
+
+if __name__ == '__main__':
+    weather()
