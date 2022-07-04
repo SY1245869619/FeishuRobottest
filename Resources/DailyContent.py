@@ -64,7 +64,7 @@ def imgMSG():
 def bugMSG1():
     bug_msg1 = "**一、禅道BUG提醒**" \
                "\n" \
-               "未关闭项目BUG总数***66个***(网络货运项目)" \
+               "未关闭项目BUG总数***57个***(网络货运项目)" \
                "\n" \
                + GetAtPeople.atpeople()
     return bug_msg1
@@ -72,7 +72,7 @@ def bugMSG1():
 
 # 配置@人（经常变）
 def atPerson():
-    at_person = ["董世昌", "王彬", "李子朋", "杨季涛", "徐嘉鑫", "韦旭安", "管世昭", "李春立", "罗恒", "吴亦凡", "陈鹏", "沈缘"]
+    at_person = ["董世昌", "王彬", "李子朋", "杨季涛", "徐嘉鑫", "韦旭安", "管世昭", "李春立", "罗恒", "吴亦凡", "陈鹏", "沈缘","许帅毅"]
     return at_person
 
 
@@ -125,9 +125,13 @@ def contentMSG2():
                    "\n" \
                    "说明：进行中" \
                    "\n" \
-                   "**路桥运距需求[🗂️](https://fangxiang-tech.feishu.cn/docs/doccnvC3mxf04H5nddyBCQ2Gdvg)**" \
+                   "**路桥整体需求[🗂️](https://fangxiang-tech.feishu.cn/docs/doccnvC3mxf04H5nddyBCQ2Gdvg)**" \
                    "\n" \
                    "产品: 货主端-运距功能优化6.3" \
+                   "\n" \
+                   "产品: 路桥项目-白名单优化(结算流程和开票流程)" \
+                   "\n" \
+                   "产品: 修改抢单时依据余量做为判断逻辑（android司机端）" \
                    "\n" \
                    "说明：进行中" \
                    "\n" \
