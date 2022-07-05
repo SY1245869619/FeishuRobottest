@@ -25,7 +25,7 @@ def GetTenantToken():
     response = requests.request("POST", url, headers=headers, params=params)
     # print(response.content)
     TenantToken = response.json()['tenant_access_token']
-    print(TenantToken)
+    # print(TenantToken)
     return TenantToken
 
 

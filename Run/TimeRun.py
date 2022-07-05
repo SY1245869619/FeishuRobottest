@@ -18,7 +18,7 @@ def timeRun():
     # 节假日接口(工作日对应结果为 0, 休息日对应结果为 1, 节假日对应的结果为 2 )
     server_url = "https://api.apihubs.cn/holiday/get?cn=1&size=31&date=" + nowTime
     req = requests.get(server_url).json()
-    print(req)
+    # print(req)
     # 获取data值
     # 判断是否为工作日
     workday = req['data']['list'][0]['workday']
@@ -28,23 +28,23 @@ def timeRun():
     workday_cn = req['data']['list'][0]['workday_cn']
     # 法定节假日判断
     holiday_legal_cn = req['data']['list'][0]['holiday_legal_cn']
-    print('日期 ' + str(nowTime) + '\n查询结果为 ' + str(workday_cn) + '\n结论 ', end=' ')
+    # print('日期 ' + str(nowTime) + '\n查询结果为 ' + str(workday_cn) + '\n结论 ', end=' ')
     # 这个用来判断节假日放假什么的
     if holiday_legal_cn == '法定节假日':
-        print('法定节假日')
+        print('TimeRun日期节假日查询               法定节假日')
         Weekly.send()
     elif int(workday) == 1:
-        print('工作日')
+        print('TimeRun日期节假日查询               工作日')
         Daily.send()
         if week_cn == '星期五':
-            print('星期五')
+            print('TimeRun日期节假日查询               星期五')
             Weekly.send()
     elif int(workday) == 2:
-        print('非工作日')
+        print('TimeRun日期节假日查询               非工作日')
         Weekly.send()
         Daily.send()
     else:
-        print('Error')
+        print('TimeRun日期节假日查询               Error出错了')
 
 
 if __name__ == '__main__':

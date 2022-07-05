@@ -81,7 +81,7 @@ def send():
     # 获取腾讯token
     Token = GetTenantToken.GetTenantToken()
     TenantToken = 'Bearer ' + str(Token)
-    print(TenantToken)
+    print("Daily腾讯Token拼接               "+TenantToken)
 
     # 请求头
     headers = {
@@ -95,6 +95,7 @@ def send():
     # 发起请求，并将返回数据打印
     response = requests.request("POST", url, params=params, headers=headers, data=data).json()
     # 打印返回数据的content数据
+    print("Daily返回数据打印              ")
     print(response)
     # 取出返回数据的message_id数据
     message_id = response["data"]["message_id"]

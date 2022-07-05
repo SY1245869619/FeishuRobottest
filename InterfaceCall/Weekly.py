@@ -77,7 +77,7 @@ def send():
         "charset": "utf-8"
     }
     response = requests.post(url, data=data1, headers=header).json()
-    print(response)
+    print("Weekly返回数据打印              \n"+response)
 
 
 if __name__ == '__main__':

@@ -86,5 +86,5 @@ def atpeople(atp=""):
     if word.count("贾晓然") > 0:
         atp = atp + "<at email=jiaxiaoran@kachexiongdi.com></at>"
     else:
-        print("退出@邮箱检索")
+        print("GetAtPeople邮箱检索           完成@邮箱操作")
     return atp

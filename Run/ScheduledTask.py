@@ -23,15 +23,16 @@ while True:
     if now_hour < "10":
         rest = 10 - int(now_hour)
         sleeptime = (rest - 1) * 3600 + (60 - int(now_min)) * 60
-        print("启动时北京时间为：" + time.strftime("%H:%M", time.localtime()), "\t软件将在", rest - 1, "小时",
+        print("启动时北京时间为：" + time.strftime("%Y-%m-%d %X", time.localtime()), "\t软件将在", rest - 1, "小时",
               int((sleeptime - (rest - 1) * 3600) / 60), "分钟后发送数据")
         time.sleep(sleeptime)
     elif now_hour > "10":
         rest = 10 - int(now_hour) + 24
         sleeptime = (rest - 1) * 3600 + (60 - int(now_min)) * 60
-        print("启动时北京时间为：" + time.strftime("%H:%M", time.localtime()), "\t软件将在", rest - 1, "小时",
+        print("启动时北京时间为：" + time.strftime("%Y-%m-%d %X", time.localtime()), "\t软件将在", rest - 1, "小时",
               int((sleeptime - (rest - 1) * 3600) / 60), "分钟后发送数据")
         time.sleep(sleeptime)
     elif now_hour == "10":
-        print("启动时北京时间为：" + time.strftime("%H:%M", time.localtime()), "\t软件将在每天10点发送数据！")
+        print("启动时北京时间为：" + time.strftime("%Y-%m-%d %X", time.localtime()), "\t软件将在每天10点发送数据！")
+        TimeRun.timeRun()
         time.sleep(36000 - int(now_min) * 60)
