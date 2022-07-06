@@ -8,7 +8,7 @@
 """
 # 定时任务，只能用于电脑一直运行时用
 import time
-import TimeRun
+from Run import TimeRun
 while True:
     # 现在的时间
     now_hour = time.strftime("%H", time.localtime())
