@@ -6,7 +6,12 @@
 @Author  ：萌新小缘
 @Date    ：2022/7/2 18:48 
 '''
-
+import sys
+import os
+# 这些是可以引用其他文件夹的前提，一定不要动，不要改位置
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
 import requests
 import time
 from InterfaceCall import Weekly, Daily

@@ -6,6 +6,12 @@
 @file: ScheduledTask.py
 @time: 2022/5/26 20:05
 """
+import sys
+import os
+# 这些是可以引用其他文件夹的前提，一定不要动，不要改位置
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
 # 定时任务，只能用于电脑一直运行时用
 import time
 from Run import TimeRun

@@ -7,7 +7,12 @@
 @time: 2022/5/31 18:36
 """
 # 获取群组chat_id
-
+import sys
+import os
+# 这些是可以引用其他文件夹的前提，一定不要动，不要改位置
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
 import GetTenantToken
 import requests
 
@@ -20,7 +25,7 @@ headers = {
 }
 url = "https://open.feishu.cn/open-apis/im/v1/chats"
 response = requests.request("get", headers=headers, url=url).json()
-print(response)
+# print(response)
 
 # 'chat_id': 'oc_a8ca381b96903c22e046faea1082f3f8',
 # 'name': '产品研发',

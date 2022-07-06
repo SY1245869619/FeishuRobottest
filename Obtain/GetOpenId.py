@@ -7,7 +7,12 @@
 @time: 2022/5/26 19:25
 """
 # 获取每个人的openid,方便@人
-
+import sys
+import os
+# 这些是可以引用其他文件夹的前提，一定不要动，不要改位置
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
 import requests
 from Obtain import GetTenantToken
 

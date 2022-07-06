@@ -6,6 +6,12 @@
 @file: GetImagesKey.py
 @time: 2022/6/6 14:52
 """
+import sys
+import os
+# 这些是可以引用其他文件夹的前提，一定不要动，不要改位置
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
 import GetTenantToken
 import requests
 from requests_toolbelt import MultipartEncoder
