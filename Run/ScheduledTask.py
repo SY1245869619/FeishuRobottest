@@ -7,11 +7,6 @@
 @time: 2022/5/26 20:05
 """
 # 定时任务，只能用于电脑一直运行时用
-import json
-
-import requests
-
-import request
 import time
 import TimeRun
 while True:
