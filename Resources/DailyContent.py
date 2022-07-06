@@ -69,7 +69,7 @@ def imgMSG():
 def bugMSG1():
     bug_msg1 = "**一、禅道BUG提醒**" \
                "\n" \
-               "未关闭项目BUG总数***51个***(网络货运项目)" \
+               "未关闭项目BUG总数***48个***(网络货运项目)" \
                "\n" \
                + GetAtPeople.atpeople()
     return bug_msg1
@@ -97,7 +97,9 @@ def bugMSG2():
                "\n" \
                "[6.27日矿大需求](https://fangxiang-tech.feishu.cn/docx/doxcnAaMSUSoAnPVMOdCcaIyund)" \
                "\n" \
-               "[灵石订单的自动审核-方案](https://fangxiang-tech.feishu.cn/docx/doxcndBCNP5k564OvLrpMHqQkFg)"
+               "[灵石订单的自动审核-方案](https://fangxiang-tech.feishu.cn/docx/doxcndBCNP5k564OvLrpMHqQkFg)"\
+               "\n" \
+               "[7.6日矿大需求-增加实时审批节点以及数据安全问题解决](https://fangxiang-tech.feishu.cn/docx/doxcnf0B0N0yARMJfyx0wZCA5af)"
     return bug_msg2
 
 
