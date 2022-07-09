@@ -47,7 +47,6 @@ def timeRun():
     elif int(workday) == 2:
         print('TimeRun日期节假日查询➡➡➡                非工作日')
         Weekly.send()
-        Daily.send()
     else:
         print('TimeRun日期节假日查询➡➡➡                Error出错了')
 

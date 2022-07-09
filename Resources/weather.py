@@ -43,7 +43,8 @@ def weather():
     d4 = d1 + '\n' + d3 + '\n'
     d5 = d2 + '\n' + d3 + '\n'
     d7 = "天气更新时间:" + gx['loc']
-    weather_tq = d4 + d5 + d7
+    # weather_tq = d4 + d5 + d7
+    weather_tq = d4 + d7
     print("weather返回数据打印⬇⬇⬇                \n"+weather_tq)
     return weather_tq
 

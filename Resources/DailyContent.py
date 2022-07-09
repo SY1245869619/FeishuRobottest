@@ -85,17 +85,7 @@ def atPerson():
 def bugMSG2():
     bug_msg2 = "**二、产品需求文档**" \
                "\n" \
-               "[STORY 213：财务对账需求](https://fangxiang-tech.feishu.cn/docs/doccnehh5e9xMmofFMuPqJlUzKe)" \
-               "\n" \
                "[路桥项目产品整体需求文档](https://fangxiang-tech.feishu.cn/docs/doccnvC3mxf04H5nddyBCQ2Gdvg)" \
-               "\n" \
-               "[路桥项目产品需求文档104平台服务费](https://fangxiang-tech.feishu.cn/docs/doccnvC3mxf04H5nddyBCQ2Gdvg)" \
-               "\n" \
-               "[财务七合一需求](https://fangxiang-tech.feishu.cn/docx/doxcnJPSn4YBtCt13adb9LuOWGe)" \
-               "\n" \
-               "[物润相关字段隐藏](https://fangxiang-tech.feishu.cn/docx/doxcnG7NefgIrK3HVnZf9w2MA1g)" \
-               "\n" \
-               "[6.27日矿大需求](https://fangxiang-tech.feishu.cn/docx/doxcnAaMSUSoAnPVMOdCcaIyund)" \
                "\n" \
                "[灵石订单的自动审核-方案](https://fangxiang-tech.feishu.cn/docx/doxcndBCNP5k564OvLrpMHqQkFg)"\
                "\n" \
@@ -138,11 +128,27 @@ def contentMSG2():
                    "\n" \
                    "产品: 路桥项目-白名单优化(结算流程和开票流程)" \
                    "\n" \
+                   "产品: 路桥项目-单位修改-SaaS部分" \
+                   "\n" \
+                   "产品: 5.7提醒及抢单限制（货主端）" \
+                   "\n" \
                    "说明：进行中" \
                    "\n" \
                    "**后台优化需求**" \
                    "\n" \
                    "产品: 方向云，运营平台，sass异步任务队列拆分" \
+                   "\n" \
+                   "说明：进行中" \
+                   "\n" \
+                   "**灵石需求**" \
+                   "\n" \
+                   "产品: 灵石订单的自动审核-方案" \
+                   "\n" \
+                   "说明：进行中" \
+                   "\n" \
+                   "**矿大需求**" \
+                   "\n" \
+                   "产品: 7.6日矿大需求" \
                    "\n" \
                    "说明：进行中" \
                    "\n" \

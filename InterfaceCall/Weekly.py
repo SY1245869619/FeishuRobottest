@@ -19,13 +19,13 @@ import json
 
 # 在这里改周报的文案
 def weekly_time():
-    Weekly_Time = "技术周报：6月27日-7月1日"
+    Weekly_Time = "技术周报：7月4日-7月8日"
     return Weekly_Time
 
 
 # 在这里改周报的链接
 def weekly_link():
-    Weekly_Link = "https://fangxiang-tech.feishu.cn/docs/doccnT2pE61dAnROLpjJyEzIlwg"
+    Weekly_Link = "https://fangxiang-tech.feishu.cn/docs/doccnY2J8k8j5aFR7gJW5MevWIg"
     return Weekly_Link
 
 
@@ -73,16 +73,16 @@ def send():
     }
     data1 = json.dumps(data, ensure_ascii=True).encode("utf-8")
     # 研发中心群
-    # url = "https://open.feishu.cn/open-apis/bot/v2/hook/e2e226c4-e953-4740-9c5a-f94e7bf1a7d7"
+    url = "https://open.feishu.cn/open-apis/bot/v2/hook/e2e226c4-e953-4740-9c5a-f94e7bf1a7d7"
     # # 消息记录群
-    url = "https://open.feishu.cn/open-apis/bot/v2/hook/f0db5b1a-0ac0-493b-9f86-b6904f2c99a0"
+    # url = "https://open.feishu.cn/open-apis/bot/v2/hook/f0db5b1a-0ac0-493b-9f86-b6904f2c99a0"
     # url = "https://open.feishu.cn/open-apis/bot/v2/hook/a53dfe87-defb-46b2-bc9a-888e9b56eb1a"
     header = {
         "Content-type": "application/json",
         "charset": "utf-8"
     }
     response = requests.post(url, data=data1, headers=header).json()
-    print("Weekly返回数据打印              \n"+response)
+    print(response)
 
 
 if __name__ == '__main__':

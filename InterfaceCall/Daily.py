@@ -10,9 +10,12 @@
 # 保证程序运行时，控制台能够搜索路径时能够调用自己写的module
 import sys
 import os
+
 # 这些是可以引用其他文件夹的前提，一定不要动，不要改位置
 curPath = os.path.abspath(os.path.dirname(__file__))
+print(curPath)
 rootPath = os.path.split(curPath)[0]
+print(rootPath)
 sys.path.append(rootPath)
 
 import requests
@@ -67,9 +70,9 @@ def send():
     # 请求体
     req = {
         # # 消息记录群（测试）
-        "receive_id": "oc_dc684ab9c57e6d7ba42330ac2a293603",
+        # "receive_id": "oc_dc684ab9c57e6d7ba42330ac2a293603",
         # 产品研发群
-        # "receive_id": "oc_a8ca381b96903c22e046faea1082f3f8",
+        "receive_id": "oc_a8ca381b96903c22e046faea1082f3f8",
         "content": json.dumps(msgContent),
         "msg_type": "interactive",
     }
@@ -81,7 +84,7 @@ def send():
     # 获取腾讯token
     Token = GetTenantToken.GetTenantToken()
     TenantToken = 'Bearer ' + str(Token)
-    print("Daily腾讯Token拼接➡➡➡               "+TenantToken)
+    print("Daily腾讯Token拼接➡➡➡               " + TenantToken)
 
     # 请求头
     headers = {
@@ -100,7 +103,7 @@ def send():
     # 取出返回数据的message_id数据
     message_id = response["data"]["message_id"]
     # 不覆盖的将message_id数据写在txt文件中
-    with open('../Resources/message_id_log.txt', 'a') as f:  # 设置文件对象
+    with open(rootPath+'/Resources/message_id_log.txt', 'a') as f:  # 设置文件对象
         print(time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime()) + "\n" + "message_id:" + message_id, file=f)
 
 

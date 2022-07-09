@@ -20,7 +20,6 @@ while True:
     now_hour = time.strftime("%H", time.localtime())
     # 现在的分钟
     now_min = time.strftime("%M", time.localtime())
-
     if now_hour < "10":
         rest = 10 - int(now_hour)
         sleeptime = (rest - 1) * 3600 + (60 - int(now_min)) * 60
