@@ -9,6 +9,7 @@
 # 日报消息卡片内容配置
 import sys
 import os
+
 # 这些是可以引用其他文件夹的前提，一定不要动，不要改位置
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
@@ -69,7 +70,7 @@ def imgMSG():
 def bugMSG1():
     bug_msg1 = "**一、禅道BUG提醒**" \
                "\n" \
-               "未关闭项目BUG总数***48个***(网络货运项目)" \
+               "未关闭项目BUG总数***52个***(网络货运项目)" \
                "\n" \
                + GetAtPeople.atpeople()
     return bug_msg1
@@ -77,23 +78,25 @@ def bugMSG1():
 
 # 配置@人（经常变）
 def atPerson():
-    at_person = ["董世昌", "王彬", "李子朋", "杨季涛", "徐嘉鑫", "韦旭安", "管世昭", "李春立", "罗恒", "吴亦凡", "陈鹏", ]
+    at_person = ["董世昌", "王彬", "李子朋", "杨季涛", "徐嘉鑫", "韦旭安", "管世昭", "李春立", "罗恒", "吴亦凡", "陈鹏", "张佳丽"]
     return at_person
 
 
-# 产品需求文档配置（可变）
+# 产品需求文档配置（经常变）
 def bugMSG2():
     bug_msg2 = "**二、产品需求文档**" \
                "\n" \
                "[路桥项目产品整体需求文档](https://fangxiang-tech.feishu.cn/docs/doccnvC3mxf04H5nddyBCQ2Gdvg)" \
                "\n" \
-               "[灵石订单的自动审核-方案](https://fangxiang-tech.feishu.cn/docx/doxcndBCNP5k564OvLrpMHqQkFg)"\
+               "[灵石订单的自动审核-方案](https://fangxiang-tech.feishu.cn/docx/doxcndBCNP5k564OvLrpMHqQkFg)" \
                "\n" \
-               "[7.6日矿大需求-增加实时审批节点以及数据安全问题解决](https://fangxiang-tech.feishu.cn/docx/doxcnf0B0N0yARMJfyx0wZCA5af)"
+               "[7.6日矿大需求-增加实时审批节点以及数据安全问题解决](https://fangxiang-tech.feishu.cn/docx/doxcnf0B0N0yARMJfyx0wZCA5af)"\
+               "\n" \
+               "[电子合同需求](https://fangxiang-tech.feishu.cn/docx/doxcnHhIO3an3p9OVdIc59UIg4b)"
     return bug_msg2
 
 
-# 上线时间配置（可变）
+# 上线时间配置（固定）
 def bugMSG3():
     bug_msg3 = "**三、上线时间**" \
                "\n" \
@@ -102,7 +105,7 @@ def bugMSG3():
     return bug_msg3
 
 
-# 需求评审会议配置（可变）
+# 需求评审会议配置（暂时固定）
 def bugMSG4():
     bug_msg4 = "**四、需求评审会议**" \
                "\n" \
@@ -124,31 +127,17 @@ def contentMSG2():
                    "\n" \
                    "**路桥整体需求[🗂️](https://fangxiang-tech.feishu.cn/docs/doccnvC3mxf04H5nddyBCQ2Gdvg)**" \
                    "\n" \
-                   "产品: 路桥单位修改，运营后台，开票平台，监管平台" \
-                   "\n" \
                    "产品: 路桥项目-白名单优化(结算流程和开票流程)" \
                    "\n" \
-                   "产品: 路桥项目-单位修改-SaaS部分" \
+                   "产品: 路桥项目-需求104-SaaS及h5部分服务费" \
                    "\n" \
-                   "产品: 5.7提醒及抢单限制（货主端）" \
+                   "产品: 路桥修改单位（android，ios司机端， android，ios货主端）" \
                    "\n" \
                    "说明：进行中" \
                    "\n" \
                    "**后台优化需求**" \
                    "\n" \
                    "产品: 方向云，运营平台，sass异步任务队列拆分" \
-                   "\n" \
-                   "说明：进行中" \
-                   "\n" \
-                   "**灵石需求**" \
-                   "\n" \
-                   "产品: 灵石订单的自动审核-方案" \
-                   "\n" \
-                   "说明：进行中" \
-                   "\n" \
-                   "**矿大需求**" \
-                   "\n" \
-                   "产品: 7.6日矿大需求" \
                    "\n" \
                    "说明：进行中" \
                    "\n" \
