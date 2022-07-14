@@ -92,7 +92,12 @@ def bugMSG2():
                "\n" \
                "[7.6日矿大需求-增加实时审批节点以及数据安全问题解决](https://fangxiang-tech.feishu.cn/docx/doxcnf0B0N0yARMJfyx0wZCA5af)"\
                "\n" \
-               "[电子合同需求](https://fangxiang-tech.feishu.cn/docx/doxcnHhIO3an3p9OVdIc59UIg4b)"
+               "[电子合同需求](https://fangxiang-tech.feishu.cn/docx/doxcnHhIO3an3p9OVdIc59UIg4b)"\
+               "\n" \
+               "[自有车校验需求](https://fangxiang-tech.feishu.cn/docx/doxcnizwASDRSyGFAJKUy2UpQjg)"\
+               "\n" \
+               "[7.13灵石项目需求-新增治超办角色相关功能](https://fangxiang-tech.feishu.cn/docx/doxcnpyTitGJcHsOyxvKalCMO4c?from" \
+               "=auth_notice&hash=ae5b93e27c11c02bef0765700421056e) "
     return bug_msg2
 
 
@@ -131,13 +136,27 @@ def contentMSG2():
                    "\n" \
                    "产品: 路桥项目-需求104-SaaS及h5部分服务费" \
                    "\n" \
-                   "产品: 路桥修改单位（android，ios司机端， android，ios货主端）" \
+                   "产品: 路桥项目-货源信息审核及其他功能优化-SaaS部分" \
+                   "\n" \
+                   "产品: 路桥项目-框架协议优化-SaaS部分" \
+                   "\n" \
+                   "产品: 路桥项目-框架协议优化-司机端" \
+                   "\n" \
+                   "产品: 路桥项目-框架协议优化-货主端" \
+                   "\n" \
+                   "产品: 路桥项目-货源信息审核-货主端（iOS）" \
                    "\n" \
                    "说明：进行中" \
                    "\n" \
                    "**后台优化需求**" \
                    "\n" \
                    "产品: 方向云，运营平台，sass异步任务队列拆分" \
+                   "\n" \
+                   "说明：进行中" \
+                   "\n" \
+                   "**灵石项目需求**" \
+                   "\n" \
+                   "产品: 灵石项目需求-新增治超办角色相关功能" \
                    "\n" \
                    "说明：进行中" \
                    "\n" \

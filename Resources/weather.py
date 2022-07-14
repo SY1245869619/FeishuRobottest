@@ -9,6 +9,7 @@
 # coding=utf-8
 import sys
 import os
+
 # 这些是可以引用其他文件夹的前提，一定不要动，不要改位置
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
@@ -26,8 +27,8 @@ def weather():
         'lang': 'zh'
     }
 
-    ybreq = requests.get(yburl, params=value)
-    cyreq = requests.get(cyurl, params=value)
+    ybreq = requests.get(yburl, params=value, verify=False)
+    cyreq = requests.get(cyurl, params=value, verify=False)
 
     ybjs = ybreq.json()
     cyjs = cyreq.json()
@@ -45,7 +46,7 @@ def weather():
     d7 = "天气更新时间:" + gx['loc']
     # weather_tq = d4 + d5 + d7
     weather_tq = d4 + d7
-    print("weather返回数据打印⬇⬇⬇                \n"+weather_tq)
+    print("weather返回数据打印⬇⬇⬇                \n" + weather_tq)
     return weather_tq
 
 

@@ -19,13 +19,13 @@ import json
 
 # 在这里改周报的文案
 def weekly_time():
-    Weekly_Time = "技术周报：7月4日-7月8日"
+    Weekly_Time = "技术周报：7月11日-7月15日"
     return Weekly_Time
 
 
 # 在这里改周报的链接
 def weekly_link():
-    Weekly_Link = "https://fangxiang-tech.feishu.cn/docs/doccnY2J8k8j5aFR7gJW5MevWIg"
+    Weekly_Link = "https://fangxiang-tech.feishu.cn/docs/doccn74dDQa4mKPG3fyGFLE9Pnf"
     return Weekly_Link
 
 

@@ -55,13 +55,13 @@ def send():
                 {
                     "tag": "hr"
                 },
-                {
-                    "tag": "div",
-                    "text": {
-                        "tag": "lark_md",
-                        "content": weather.weather()
-                    }
-                }
+                # {
+                #     "tag": "div",
+                #     "text": {
+                #         "tag": "lark_md",
+                #         "content": weather.weather()
+                #     }
+                # }
 
             ]
         }
